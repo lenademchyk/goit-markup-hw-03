@@ -6,6 +6,7 @@
   --primary-bg-color: #2f303a;
   --secondary-bg-color: #f5f4fa;
   --card-set-gap: 30px;
+  --padding-gap: 94px;
 }
 
 body {
@@ -24,6 +25,11 @@ p,
 ul {
   margin: 0;
   padding: 0;
+}
+
+.section {
+  padding-top: var(--padding-gap);
+  padding-bottom: var(--padding-gap);
 }
 
 .container {
@@ -82,7 +88,7 @@ ul {
   margin-left: 93px;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav .item-nav:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -112,7 +118,7 @@ ul {
   margin-left: auto;
 }
 
-.contacts-nav .item + .item {
+.contacts-nav .item-nav + .item-nav {
   margin-left: 50px;
 }
 
@@ -180,9 +186,13 @@ ul {
 
 /* ------------Features--------- */
 
+/* .features {
+  padding-top: var(--padding-gap);
+  padding-bottom: var(--padding-gap);
+} */
+
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0;
 }
 
 .features-item {
@@ -213,7 +223,7 @@ ul {
 /* ----------Gallery---+---Team------ */
 
 .gallery {
-  padding-bottom: 94px;
+  padding-bottom: 0;
 }
 
 .item {
@@ -225,7 +235,9 @@ ul {
   display: flex;
   margin-right: calc(-1 * var(--card-set-gap));
 }
-
+.gallary-title {
+  padding-top: 94px;
+}
 .gallery-title,
 .team-title {
   color: var(--title-text-color);
@@ -239,8 +251,8 @@ ul {
 
 .team {
   background-color: var(--secondary-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: var(--padding-gap);
+  padding-bottom: var(--padding-gap); */
 }
 
 .team-gallery {
@@ -275,16 +287,11 @@ ul {
 }
 
 .team-card {
-  margin-top: var(--card-set-gap);
-  margin-bottom: var(--card-set-gap);
+  padding-top: var(--card-set-gap);
+  padding-bottom: var(--card-set-gap);
 }
 
 /* ---------------Portfolio--------- */
-
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .portfolio-gallery {
   display: flex;
@@ -369,6 +376,11 @@ ul {
   background-color: var(--accent-color);
 }
 
+.button.secondary.current {
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+}
+
 /* -------------Footer--------------- */
 
 .footer {
@@ -411,7 +423,6 @@ ul {
 }
 
 .address {
-  /* display: block; */
   margin-top: 20px;
 }
 .address .contact-item:not(:last-child) {
