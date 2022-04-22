@@ -191,7 +191,7 @@ ul {
   padding-bottom: var(--padding-gap);
 } */
 
-.features {
+.features.section {
   padding-bottom: 0;
 }
 
@@ -222,7 +222,7 @@ ul {
 
 /* ----------Gallery---+---Team------ */
 
-.gallery {
+.gallery.section {
   padding-bottom: 0;
 }
 
